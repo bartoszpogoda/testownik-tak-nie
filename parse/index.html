@@ -32,8 +32,8 @@
       if (line.startsWith("+")) {
         var innerQuestionElement = {};
 
-        var indexOfYes = line.indexOf("TAK");
-        var indexOfNo = line.indexOf("NIE");
+        var indexOfYes = line.lastIndexOf("TAK");
+        var indexOfNo = line.lastIndexOf("NIE");
 
         if (indexOfYes != -1) {
           // Answer = YES
